@@ -7,5 +7,4 @@ export function add(numbers: string): number {
     .split(",")
     .map(Number)
     .reduce((sum, num) => sum + num, 0);
-
 }
