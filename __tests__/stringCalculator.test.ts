@@ -31,4 +31,8 @@ describe("String Calculator", () => {
         );
     });
 
+    it("should return 0 for input with just delimiters", () => {
+        expect(add(",\n,")).toBe(0);
+    });
+
 });
