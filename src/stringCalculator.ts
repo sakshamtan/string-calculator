@@ -3,5 +3,9 @@ export function add(numbers: string): number {
 
   if(numbers.length === 1) return Number(numbers);
 
-  return -1;
+  return numbers
+    .split(",")
+    .map(Number)
+    .reduce((sum, num) => sum + num, 0);
+
 }
